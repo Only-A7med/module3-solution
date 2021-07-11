@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comptible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="module3-solution.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="script" type="text/javascript" href="bootstrap.min.js">
+	<link rel="script" type="text/javascript" href="bootstrap.js">	
+	<link rel="script" type="text/javascript" href="npm.js">		
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<title>module3-solution</title>
+</head>
+<body>
+ 
+	<nav id="header-nav" class="navbar navbar-default">			
+		<div class="contanier">
+			<div class="navbar-header">
+
+				<div class="navbar-brand divfoodlcc">
+					<a href="index.html" class="pull-left"><h1>Food,&nbsp LCC</h1></a>
+
+
+
+				</div>
+
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+					
+  						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+
+					</button>
+
+
+
+			</div>
+			
+			<div id="collapsable-nav" class="collapse navbar-collapse">
+				<ul id="nav-list" class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#section1">
+							<span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Chicken</a>
+							
+					</li>
+					<li>
+						<a href="#section2">
+						<span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Beef</a></li>
+
+					<li>
+						<a href="#section3">
+						<span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Sushi</a></li>
+				
+				</ul>
+				
+			</div>
+		</div>
+
+
+	</div>
+
+</nav>
+</header>
+
+<h1 id="h1menu">Our Menu</h1>
+
+	<div>
+		<div id="divchicken">
+			<div><p id="chicken">Chicken</p></div>
+
+
+
+		<div><section id="section1">Paraphrasing (If you haven't already) Create a GitHub.com account and a repository that you will use for this class.
+
+(If you haven't already) Follow the Development Setup Video (beginning of Module 1) instructions on how to create a repository and set it up such that you can host and view your finished web pages on GitHub Pages, i.e., GitHub.io domain name. You will need to provide that URL for your peer review.
+
+Create a folder in your repository that will serve as a container folder for your solution to this assignment. You can call it whatever you want. For example, module3-solution or mod3_solution, etc. Create an index.html file inside the solution container folder, e.g., module3-solution/index.html.
+
+The implementation of the page you will be creating should follow the mockup illustrations shown below. You are provided 3 mockups: desktop and tablet (same), mobile, and mobile with mobile menu dropdown shown. Your implementation has to be JUST 1 page. In other words, you will be creating a single, responsive page.
+
+Your page must include a CSS file. No inline styles allowed. Your CSS file should be placed into a css folder under the solution container folder, e.g., module3-solution/css.
+
+For this assignment, you are to use Twitter Bootstrap CSS Framework as much as possible. I suggest you start with copying the starter bootstrap files and folders we discussed in Lecture 25 part 2. If you've cloned/downloaded the code example repository, it should be in the examples/Lecture25 folder. Copy the contents of examples/Lecture25 to your solution container folder (e.g., module3-solution) as a starting point..
+
+Since we are using Bootstrap for this assignment, instead of specifying pixel ranges, I will define our desktop, tablet, and mobile views in terms of Bootstrap CSS class prefixes, i.e., md, sm, and xs.
+
+Desktop mockup illustration should correspond to Bootstrap md-based classes
+Tablet mockup illustration should correspond to Bootstrap sm-based classes
+Mobile mockup illustration should correspond to Bootstrap xs-based classes
+Navbar: Create a navbar that scrolls away together with the page (the navbar should become invisible and is not fixed to the top when you scroll the page down). The navbar should have a company name (i.e., navbar-brand class) called "Food, LLC" that is aligned to the left side of the navbar. (See https://getbootstrap.com/docs/3.3/components/#navbar. Make the browser window narrower to see the mobile menu button appear in the first example shown at the provided link.)
+
+For desktop and tablet view, the navbar should not contain anything else. No other buttons should be visible. (Hint: use 'visible-xs' class.)
+
+Navbar - Mobile View: Create a simple menu button (3 horizontal bars). When the user clicks that button, a dropdown menu should appear (as illustrated in Mobile Open Menu illustration below.) The dropdown menu should contain 3 items: Chicken, Beef, and Sushi.
+
+The dropdown menu should take up the entire width of the browser window. Make sure the dropdown menu has a background color set that distinguishes it from the rest of the content.
+
+(Hint: See https://getbootstrap.com/docs/3.3/components/#navbar and Lecture 31 for examples on how to accomplish this.)
+
+Page Heading. The page heading that says Our Menu should be centered within the browser window. You must use a Bootstrap class to accomplish this.
+
+(Hint: look for a Bootstrap class that centers text, see https://getbootstrap.com/docs/3.3/css/#type-alignment.)
+
+Create a single really tall section that will use the Bootstrap Grid and take up the entire width of the browser window (minus some margins, of course) for all views: desktop, tablet, and mobile. To make the section really tall, you can either fill it out with a LOT of text or simply set its height to something like 1000px. It needs to be tall enough to cause scrolling down to be required to view the bottom of the section. Make sure its background color is set to distinguish it from the rest of the content. (Hint: don't forget to have an element with a class='container' or class='container-fluid' wrapping your grid. Remember that to have the grid do something "always", i.e., no matter what browser window size, use the col-xs-... classes. In this case, since we want the section to take up the entire row, use col-xs-12.)
+
+Both the tablet view and the desktop view of what's graded and required is the same. Here is the mockup illustration of the desktop & tablet version of the site (only required graded parts shown):
+
+Features The online paraphrase tool has numerous features including, rewriting essays, removing plagiarism, and rewording articles. Our paraphrasing tool works best as a word changer and sentence rephraser.</section></div>
+
+		</div>
+
+		<div id="divbeef">
+			<p id="beef">Beef</p>
+
+			<section id="section2">Paraphrasing Features The online paraphrase tool has numerous features including, rewriting essays, removing plagiarism, and rewording articles. Our paraphrasing tool works best as a word changer and sentence rephras</section>
+
+		</div>
+		<div id="divSushi">
+
+			<div><p id="Sushi">Sushi</p></div> <!-- // https://github.com/Only-A7med/module2-solution.git //
+			 akiba's trip the animation -- https://ww1.animeiat.co/episodes/akibas-trip-the-animation-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-1-%d9%85%d8%aa%d8%b1%d8%ac%d9%85%d8%a9/ -- op -- https://www.youtube.com/watch?v=-JLSynxh4ss // darling in the franxx -- https://octanime.net/animes/darling-in-the-franxx-3408/episodes/11 --- https://animeblkom.net/watch/darling-in-the-franxx/6// ao no exorcist -- https://ww.xsanime.com/episode/ao-no-exorcist-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-1//watch // charlotte anime -- https://octanime.net/animes/charlotte-8388/episodes/10 -- 3 // donten ni warau gaiden -- https://ww.anime4up.com/episode/%d9%81%d9%8a%d9%84%d9%85 // -donten-ni-warau-gaiden-ouka-tenbou-no-kakehashi/ // bungou stray dogs // kekkai sensen // satsuriku no tenshi // kokoro ga sakebitagatterunda // fate zero anime -- https://octanime.net/animes/fatezero-1104/episodes/1 -- 12:30 // castlevania -- https://ww.xsanime.com/anime/castlevania/
+
+			Gotoubun No Hanayome :
+			https://ww.anime4up.com/episode/gotoubun-no-hanayome-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-1/
+			https://animetak.net/watch_episodes/%D8%A7%D9%86%D9%85%D9%8A-gotoubun-no-hanayome-2nd-season-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-3-%D9%85%D8%AA%D8%B1%D8%AC%D9%85%D8%A9-%D8%A7%D9%88%D9%86-%D9%84%D8%A7%D9%8A%D9%86.html
+
+			Gotoubun No Hanayome Ending Aya Uchida Full -- = -- https://www.youtube.com/watch?v=s6k3mW0Kgls
+			https://music.youtube.com/watch?v=60iEGUJDbdY&list=RDAMVM60iEGUJDbdY
+			
+			ano natsu de matteru:
+			https://octanime.net/animes/ano-natsu-de-matteru-2711/episodes/9
+			https://shahid.animelek.tv/video/episodes/anime-ano-natsu-de-matteru-7alqa-9-mawsem-1-video-watch-download-anime2001?play=embed
+			AHO-Girl:
+			https://octanime.net/animes/aho-girl-308/episodes/11
+
+			saiki :
+
+			https://octanime.net/animes/saiki-kusuo-no-ps-nan-4567/episodes/1
+			
+
+
+			https://www.animeiat.tv/watch/zutto-mae-kara-suki-deshita-kokuhaku-jikkou-iinkai-episode-1			
+			
+			https://www.youtube.com/watch?v=Jmk88cnBc3s
+
+			shimoneta:
+			
+			https://royalkom.com/episodes/shimoneta-e9/#.YOWr4ZgzbIV
+			https://animeblkom.net/watch/shimoneta-to-iu-gainen-ga-sonzai-shinai-taikutsu-na-sekai/9
+
+			Tonikaku Kawaii
+			https://ww.anime4up.com/anime/tonikaku-kawaii/
+			 -->
+
+			<div><section id="section3">Paraphrasing Features The online paraphrase tool has numerous features including, rewriting essays, removing plagiarism, and rewording articles. Our paraphrasing tool works best as a word changer and sentence rephras</section></div>
+
+		</div>
+
+		</div>
+		
+</div>
+
+
+
+
+</body>
+</html>
